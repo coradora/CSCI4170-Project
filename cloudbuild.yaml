@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  script: |
+    docker build -t us-central1-docker.pkg.dev/$PROJECT_ID/csci4170-project/project-image:tag1 .
+  automapSubstitutions: true
+images:
+- 'us-central1-docker.pkg.dev/csci4170-413022/csci4170-project/project-image:tag1'
